@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Breath-based Meditation App</title>
+  </head>
+  <body>
+    <div class="input">
+      <label>Select Breaths</label>
+      <select class="breath-input">
+        <option value="3">3 Breaths</option>
+        <option value="5">5 Breaths</option>
+        <option value="7">7 Breaths</option>
+      </select>
+    </div>
+
+    <div class="input">
+      <label>Select Background Music</label>
+      <select id="musicSelector">
+        <option value="public\soft-synth-music-242044.mp3">Soft music</option>
+        <option value="public/meditative-rain-114484.mp3">Rain Sounds</option>
+        <option value="public/relaxing-birds-and-piano-music-137153.mp3">
+          Birds and Piano Sounds
+        </option>
+      </select>
+      <br />
+      <div id="playPauseButton">
+        <span id="playIcon" class="material-icons">play_arrow</span>
+        <span id="pauseIcon" class="material-icons hidden">pause</span>
+      </div>
+    </div>
+
+    <div class="circle-wrap">
+      <div class="circle-outline"></div>
+      <div class="circle-progress"></div>
+    </div>
+
+    <p class="breaths">
+      Breaths remaining: <span class="breaths-text">3</span>
+    </p>
+    <p class="instructions">Are you ready to begin breathing?</p>
+    <button class="start">Begin</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>

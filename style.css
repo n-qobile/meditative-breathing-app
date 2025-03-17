@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url("public/water.jpg");
+  background-size: cover;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1; /* Get writing on top of transparent background */
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.input label {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.input select {
+  border: none;
+  border-radius: 8px;
+  min-width: 300px;
+  font-size: 16px;
+  padding: 8px 4px;
+  background-color: #2e4994;
+  color: white;
+}
+
+.input select:focus {
+  outline: none;
+}
+
+#playPauseButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.material-icons {
+  font-size: 48px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+
+.circle-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.circle-outline {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 10px solid #f1f1f1;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) 0 4px 6px -2px
+    rgba(0, 0, 0, 0.5);
+}
+
+.circle-progress {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #2e4994;
+  border-radius: 50%;
+  transition: 4s ease all;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) 0 4px 6px -2px
+    rgba(0, 0, 0, 0.5);
+}
+
+.circle-grow {
+  transform: scale(5.3);
+}
+
+.breaths {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.instructions {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+button {
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: #2e4994;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) 0 1px 2px 0 rgba(0, 0, 0, 0.6);
+}
+
+button:hover {
+  background-color: #f1f1f1;
+  color: #2e4994;
+}
+
+.button-inactive {
+  pointer-events: none;
+  background-color: 969696;
+} /* When the timer breathing is on, one cannot click button so it turns grey*/
