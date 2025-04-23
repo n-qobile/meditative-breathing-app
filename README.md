@@ -1,3 +1,5 @@
+<h1>Meditative Breathing</h1>
+
 Building a guided Meditative Breathing App with timing, sounds and prompts.
 
 Live demo: https://meditativebreathing.netlify.app/
