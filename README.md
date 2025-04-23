@@ -1,6 +1,6 @@
 Building a guided Meditative Breathing App with timing, sounds and prompts.
 
-Live demo: https://incredible-bienenstitch-5bc3df.netlify.app/
+Live demo: https://meditativebreathing.netlify.app/
 
 Homepage- requires you to pick the number of breaths (3,5 or 7) you want to do accompanied by the background music you want (press play/pause icon to hear different sounds). Once satisfied with selection, press "Begin" at bottom.
 
